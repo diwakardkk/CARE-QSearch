@@ -1,0 +1,1 @@
+H on index register -> compiled clinical predicate phase oracle -> diffusion -> measurement

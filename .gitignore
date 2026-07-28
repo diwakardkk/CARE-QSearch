@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# Local/generated manuscript artifacts
+paper_latex/
+care_qsearch_latex_source.zip
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+
+# Heavy regenerated result files
+output/raw_results/
+output/aggregated_results/
+output/logs/
+
+# Downloaded public datasets are intentionally not committed
+heart+disease/
+statlog+heart/
+heart-disease.zip
+statlog-heart.zip

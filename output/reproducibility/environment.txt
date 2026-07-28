@@ -1,0 +1,11 @@
+Python: 3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]
+Platform: macOS-26.5.2-arm64-arm-64bit-Mach-O
+Processor: arm
+NumPy: 2.4.3
+Pandas: 3.0.3
+SciPy: 1.17.1
+Matplotlib: 3.10.9
+scikit-learn: 1.8.0
+Qiskit: 2.5.1
+
+Quantum implementation note: Qiskit metrics are opt-in with CARE_USE_QISKIT=1 for small N. Default runs use a compiled clinical-predicate truth-table oracle with exact Grover amplitude-amplification probabilities and transparent heuristic circuit-resource estimates.

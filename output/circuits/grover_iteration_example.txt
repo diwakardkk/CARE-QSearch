@@ -1,0 +1,1 @@
+One Grover iteration = predicate phase oracle + inversion about mean diffusion operator

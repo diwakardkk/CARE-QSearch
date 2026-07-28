@@ -1,0 +1,59 @@
+{
+  "mode": "plots-only",
+  "alpha_2q": 10.0,
+  "lambda_fn": 5.0,
+  "lambda_fp": 1.0,
+  "epsilon": 1e-09,
+  "max_queries_per_dataset_full": 8,
+  "max_queries_per_dataset_smoke": 6,
+  "random_order_repeats": 3,
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "N": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "shots": [
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096
+  ],
+  "noise_levels": {
+    "clean": {
+      "two_qubit_depolarizing": 0.0,
+      "readout": 0.0
+    },
+    "low": {
+      "two_qubit_depolarizing": 0.001,
+      "readout": 0.01
+    },
+    "medium": {
+      "two_qubit_depolarizing": 0.005,
+      "readout": 0.03
+    },
+    "high": {
+      "two_qubit_depolarizing": 0.02,
+      "readout": 0.05
+    }
+  },
+  "missingness_levels": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "full_mode_controlled_design": "Full mode avoids an excessive Cartesian product: finite-shot runs use clean/no-missingness across all shots; noise runs use no-missingness at 1024 shots across noise levels; missing-data runs use clean noise at 1024 shots across missingness levels. It uses all configured N values and full seeds with a controlled generated-query panel."
+}

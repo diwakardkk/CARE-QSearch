@@ -1,0 +1,16 @@
+Claim,Metric,Cleveland Evidence,Statlog Evidence,Statistical Test,Supported?,Notes
+CARE reduces oracle-level resource cost.,oracle_depth/CX,-11.333333333333336,-8.041666666666664,paired Wilcoxon where available,True,Qiskit-transpiled for small N only when CARE_USE_QISKIT=1; otherwise heuristic estimates.
+CARE lowers total resource-adjusted query cost.,RAQC,163755208340719.06,163755208340719.06,paired Wilcoxon where available,False,RAQC is C_total / P_success and includes adaptive schedule cost.
+CARE maintains retrieval success.,P_success,0.03817858573717947,0.03817858573717947,paired Wilcoxon where available,True,Finite-shot/noise model can lower all methods.
+CARE-Fuse lowers total search resource cost.,C_total,-892.9292467948717,-892.9292467948717,paired Wilcoxon where available,True,CARE-Fuse explicitly optimizes success per total resource cost.
+CARE-Fuse improves resource utility.,P_success / C_total,0.0027212153137717338,0.0027212153137717338,paired Wilcoxon where available,True,Primary CARE-Fuse objective.
+CARE-Fuse lowers robust RAQC.,median paired RAQC,-542.9391667516925,-542.9391667516925,paired Wilcoxon where available,True,Mean RAQC is outlier-dominated; report robust summaries.
+CARE-Fuse maintains retrieval success.,P_success,-0.07903958834134617,-0.07903958834134617,paired Wilcoxon where available,False,Fixed-budget utility can trade a small success reduction for lower total cost.
+CARE-Fuse-95 enforces success retention.,P_success >= 0.95 x Standard,0.9863782051282052,0.9863782051282052,paired descriptive retention rate,True,Success-constrained cost minimization variant.
+CARE-Fuse-95 lowers total search resource cost.,C_total,-288.21866987179465,-288.21866987179465,paired Wilcoxon where available,True,Cost under success-retention constraint.
+CARE-Fuse-95 improves resource utility.,P_success / C_total,0.002637928409451928,0.002637928409451928,paired Wilcoxon where available,True,Utility under success-retention constraint.
+Small-N Qiskit sanity check supports resource trend.,Qiskit transpiled depth/CX,96,96,descriptive validation,True,"Small-N Qiskit validation completed for 96 cases. Heuristic estimates understate absolute Qiskit depth/CX (median relative errors: depth -0.448, CX -0.353) but preserve the CARE-versus-standard resource-reduction trend."
+Benefits increase for rare target sets.,rarity-bin RAQC,,,descriptive,mixed,Inspect aggregated_results by rarity_bin.
+Increasing K increases circuit cost.,oracle_depth/CX vs K,,,descriptive,True,Estimated predicate costs.
+Noise reduces retrieval reliability.,P_success/FNR,,,descriptive,True,Controlled noise attenuation.
+Missingness increases false-negative risk.,FNR/recall,,,descriptive,mixed,Depends on strict vs candidate-preserving policy.

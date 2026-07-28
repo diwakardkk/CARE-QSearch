@@ -1,0 +1,24 @@
+CARE vs Standard Grover mean success difference: 0.0382
+CARE vs Standard Grover mean oracle depth difference: -11.33
+CARE vs Standard Grover mean CX difference: -8.04
+CARE-Fuse vs Standard Grover mean success difference: -0.0790
+CARE-Fuse vs Standard Grover mean oracle depth difference: -11.33
+CARE-Fuse vs Standard Grover mean CX difference: -8.04
+CARE-Fuse vs Standard Grover mean RAQC difference: 67667227563381.92
+CARE-Fuse vs Standard Grover median RAQC difference: -542.94
+CARE-Fuse vs Standard Grover mean total resource cost difference: -892.93
+CARE-Fuse total resource cost paired win rate: 0.9651
+CARE-Fuse resource utility paired win rate: 0.9958
+CARE-Fuse-95 vs Standard Grover mean success difference: 0.0058
+CARE-Fuse-95 vs Standard Grover mean oracle depth difference: -11.33
+CARE-Fuse-95 vs Standard Grover mean CX difference: -8.04
+CARE-Fuse-95 vs Standard Grover mean RAQC difference: 96475560897018.58
+CARE-Fuse-95 vs Standard Grover median RAQC difference: -160.79
+CARE-Fuse-95 vs Standard Grover mean total resource cost difference: -288.22
+CARE-Fuse-95 success retention paired rate: 0.9864
+CARE-Fuse-95 total resource cost paired win rate: 0.9538
+CARE-Fuse-95 resource utility paired win rate: 0.9958
+Qiskit small-N validation cases: 96
+Qiskit validation note: Small-N Qiskit validation completed for 96 cases. Heuristic estimates understate absolute Qiskit depth/CX (median relative errors: depth -0.448, CX -0.353) but preserve the CARE-versus-standard resource-reduction trend.
+Mean oracle-query ratio, quantum rows: 17.8929
+Main limitation: default full runs use transparent heuristic resource estimates; Qiskit validation is a small-N sanity check, not a full hardware/resource proof.

@@ -1,0 +1,1 @@
+U_f |i> = (-1)^f(i)|i>, f(i)=1 iff all clinical predicates are satisfied
