@@ -172,15 +172,3 @@ Important generated artifacts:
 | `output/qiskit_validation/qiskit_smallN_validation.xlsx` | Qiskit sanity-check workbook |
 | `output/statistical_tests/paired_tests.csv` | Paired statistical tests |
 
-## Publishable Interpretation
-
-This repository supports a workshop or applied quantum-computing submission if the wording stays careful:
-
-- supported: resource-aware predicate ordering reduces oracle depth and CX count;
-- supported: CARE-QSearch-adaptive improves retrieval success over standard Grover;
-- supported: CARE-Fuse-95 preserves success close to standard Grover and reduces total resource cost in most paired runs;
-- supported: small-N Qiskit validation preserves the resource-reduction trend;
-- not supported: hardware speedup;
-- not supported: scalable QRAM advantage;
-- not supported: lower mean RAQC;
-- not supported: clinical diagnosis validation.
